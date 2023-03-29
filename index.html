@@ -10,20 +10,42 @@
 
     <body>
         <header>
-            <h1>Betsy Gillard</h1>
-            <h2>Full-stack developer based in Denver, CO</h2>
             <nav class="top-nav"> 
-                <h3><a href=#about>About Me</a></h3>
+                <h3><a href=#about>About</a></h3>
                 <h3><a href="#experience">Experience</a></h3>
                 <h3><a href="#contact">Contact</a></h3>
             </nav>
         </header>
 
-        <div class="top-space" id="about"></div>
-        
-        <h2 class="title">About me</h2>
+        <h1 class="name1">Betsy Gillard</h1>
+        <h3 class="name2">Full-stack developer based in Denver, CO</h3>
 
+        <div id="advice">
+            <button><h3>Click here for free life advice</h3></button>
+            <div id="sentence">
+                <p id="empty"></p>
+            </div>
+
+        </div>
+        <div class="top-space" id="about"></div>
+        <h2 class="title">About</h2>
         <div class="container">
+            <div id="education">
+                <h3>Certifications</h3>
+                    <p class="tab">Full-Stack Engineer Professional Certification #63E6CBB690</p>
+                    <p class="tab">Colorado PE.0055665 - Water Resources & Environmental Systems</p>
+                    <br>
+                <h3>Education</h3>
+                <div class="tab">
+                    <h4>Codecademy</h4>
+                    <p>Full-Stack Engineer Course, 2023</p>
+                    <h4>Portland State University</h4>
+                    <p>Bachelor of Science in Civil Engineering, 2012</p>
+                    <p>President of Chi Epsilon Civil Engineering Honor Society</p> 
+                    <br> 
+                </div>
+            </div>
+
             <div id="about-text">
                 <p>Here is some crap about me.</p>
                 <p>And more crap.</p>
@@ -33,20 +55,7 @@
 
             <img id="selfie" src="./resources/selfie.jpg">
 
-            <div id="education">
-                <h2>Certifications</h2>
-                    <p>Full-Stack Engineer Professional Certification #63E6CBB690</p>
-                    <p>Colorado PE.0055665 - Water Resources & Environmental Systems</p>
-                    <br>
-                <h2>Education</h2>
-                    <h4>Codecademy</h4>
-                    <p>Full-Stack Engineer Course, 2023</p>
-                    <h4>Portland State University</h4>
-                    <p>Bachelor of Science in Civil Engineering, 2012</p>
-                    <p>President of Chi Epsilon Civil Engineering  Honor Society</p>
-                    <p>Leader in Student Services Award, 2012</p>  
-                    <br> 
-            </div>
+           
         </div>
 
         <div class="top-space" id="experience"></div>
@@ -54,22 +63,6 @@
         <h2 class="title">Experience</h2>
 
         <div class="container">
-            <div class="activity">
-                <div class="posthover" id="gestem-hover">
-                    <h4>GESTEM Planning Committee <br> Guide Coordinator</h4>
-                    <h5>2017 - present</h5>
-                    <p>Recruiting, training, and organizing approximately 120 volunteers for annual event for 1,000+ middle-schoolers</p>
-                    <a href="https://www.swe-rms.org/gestem.html" target="_blank">GESTEM website</a>
-                    <br>
-                    <br>
-                    <a href="https://www.swe-rms.org/blog/gstem-a-fun-filled-day-exploring-stem-with-middle-school-girls" target="_blank">My blog post about GESTEM</a>
-                </div>
-
-                <div class="prehover" id="gestem">
-                    <img src="./resources/GESTEM LOGO with Rocky Mountain SWE.jpg">
-                </div>
-            </div>
-        
             <div class="activity">
                 <div class="posthover" id="apcd-hover">
                     <h4>CO Department of Public Health & Environment <br> Air Permitting Website Overhaul</h4>
@@ -81,7 +74,6 @@
                     <br>
                     <a href="https://cdphe.colorado.gov/apens-and-air-permits/do-you-need-an-apen-or-air-permit" target="_blank">Created clearer guidance for industry</a>
                 </div>
-
                 <div class="prehover" id="apcd">
                     <img src="./resources/APCD-logo.png">
                 </div>
@@ -100,6 +92,22 @@
                     <img src="./resources/SUNI.png">
                 </div>
             </div>
+
+            <div class="activity">
+                <div class="posthover" id="gestem-hover">
+                    <h4>GESTEM Planning Committee <br> Guide Coordinator</h4>
+                    <h5>2017 - present</h5>
+                    <p>Recruiting, training, and organizing approximately 120 volunteers for annual event for 1,000+ middle-schoolers</p>
+                    <a href="https://www.swe-rms.org/gestem.html" target="_blank">GESTEM website</a>
+                    <br>
+                    <br>
+                    <a href="https://www.swe-rms.org/blog/gstem-a-fun-filled-day-exploring-stem-with-middle-school-girls" target="_blank">My blog post about GESTEM</a>
+                </div>
+
+                <div class="prehover" id="gestem">
+                    <img src="./resources/GESTEM LOGO with Rocky Mountain SWE.jpg">
+                </div>
+            </div>
         </div>
 
         <div class="top-space" id="contact"></div>
@@ -115,20 +123,6 @@
     
     </body>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <script src="./main.js"></script>
 
 </html>
