@@ -1,3 +1,31 @@
+body {
+    display: flex;
+}
+
+div {
+    width: 20%;
+}
+
+#one {
+    background-color: #5c2751;
+}
+#two {
+    background-color: #7293a0;
+}
+#three {
+    background-color: #45b69c;
+}
+#four {
+    background-color: #d8ddef;
+}
+#five {
+    background-color: white;
+}
+
+
+
+
+
 .indigo {
     color: #2E294E;
 }

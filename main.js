@@ -1,43 +1,51 @@
 const first = [
-    'Today is your day',
-'Today is not your day',
-'The time is now',
-'Tomorrow will be your day'
+    'Today is your day to',
+'Today it is definitely a bad idea to',
+'The time is now to',
+'When in doubt,'
 ];
 
 const second = [
-    'to go cause some trouble',
-'to take some time for introspection',
-'to give BirdDog some treats',
-'to eat a lot of cookies',
+    ' go cause some trouble',
+' take some time for introspection',
+' give BirdDog some treats',
+' eat a lot of cookies',
 ];
 
 const third = [
-'the difference between "they\'re" "there" and "their".',
-'capitalism is a death cult.',
-'to eat breakfast first.',
-'I just took a DNA test turns out I\'m 100% that bitch.',
+    ", but don't forget",
+    ", oh and also",
+    ", but you're a terrible person if you didn't know"
+];
+
+const fourth = [
+' the difference between "they\'re" "there" and "their".',
+' capitalism is a death cult.',
+' to eat breakfast first.',
+' I just took a DNA test turns out I\'m 100% that bitch.',
 ];
 
 
 
 const generateSentence = () => {
-    let one = first[Math.floor(Math.random() * 4)];
-    let two = second[Math.floor(Math.random() * 4)];
-    let three = third[Math.floor(Math.random() * 4)];
+    let one = first[Math.floor(Math.random() * first.length)];
+    let two = second[Math.floor(Math.random() * second.length)];
+    let three = third[Math.floor(Math.random() * third.length)];
+    let four = fourth[Math.floor(Math.random() * fourth.length)];
 
-    return `${one} ${two}, but don't forget ${three}`;
+    return `${one}${two}${three}${four}`;
 }
 
+let button = document.querySelector('button');
 const giveAdvice = () => {
     let sentence = generateSentence();
     document.getElementById('empty').innerHTML = sentence;
-    document.querySelector('button').innerHTML = 'More advice please';
+    button.innerHTML = 'More advice please';
 
 }
 
 
 
 
-let button = document.querySelector('button');
+
 button.addEventListener('click', giveAdvice);
