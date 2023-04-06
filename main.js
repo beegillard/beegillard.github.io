@@ -36,11 +36,11 @@ const generateSentence = () => {
     return `${one}${two}${three}${four}`;
 }
 
-let button = document.querySelector('button');
+let button = document.getElementById('advice-button');
 const giveAdvice = () => {
     let sentence = generateSentence();
     document.getElementById('empty').innerHTML = sentence;
-    button.innerHTML = 'More advice please';
+    button.innerHTML = 'GET MORE ADVICE';
 
 }
 

@@ -5,138 +5,44 @@
         <meta charset="UTF-8">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     </head>
 
     <body>
+
+        <nav> 
+            <div class="top-nav homepage">
+                <ul>
+                    <li><a href='./about.html'>About</a></li>
+                    <li><a href='./experience.html'>Experience</a></li>
+                    <li><a href='./contact.html'>Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
         <header>
-            <nav class="top-nav"> 
-                <h2><a href=#about>About</a></h2>
-                <h2><a href="#experience">Experience</a></h2>
-                <h2><a href="#contact">Contact</a></h2>
-            </nav>
+            <div id="header">
+                <div class="top-space"></div>
+                <h1>Betsy Gillard</h1>
+                <h2 class="name2">Full-stack developer</h2>
+                <div id="advice">
+                    <button type="button" id="enter"><a href="./about.html" download>ENTER SITE</a></button>
+                    <button type="button" id="resume-button"><a href="./resources/Betsy_Gillard_resume.pdf" download>DOWNLOAD RESUME</a></button>
+                    <button type="button" id="advice-button">GET FREE LIFE ADVICE</button>
+                </div>
+                <div id="sentence">
+                    <p id="empty"></p>
+                </div>
+            </div>
         </header>
-        <div id="content-wrapper">
 
-        <h1 class="name1">Betsy Gillard</h1>
-        <h3 class="name2">Full-stack developer based in Denver, CO</h3>
-        <br>
-        <a href="./resources/Betsy_Gillard_resume.pdf" download><h3 class="name2">Download resume</h3></a>
 
-        <div id="advice">
-            <button type="button">Click here for free life advice</button>
-            <div id="sentence">
-                <p id="empty"></p>
-            </div>
-        </div>
 
-        <div class="top-space" id="about"></div>
-        <h2 class="title">About</h2>
-        <div class="container">
 
-            <div id="about-text">
-                <p>Civil engineer turned full-stack developer. Obsessed with efficiency and process improvement; striving to use technology to eliminate time and resource waste for companies, non-profits, and government agencies. </p>
-                <p>Highly self-motivated learner who enjoys working independently and collaboratively.</p>
-                <p>Passionate about environmental sustainability and promoting diversity in STEM.</p>
-                <br>
-            </div>
-            <div id="education">
-                <h3>Certifications</h3>
-                    <p class="tab">Full-Stack Engineer Professional Certification #63E6CBB690</p>
-                    <p class="tab">Colorado PE.0055665 - Water Resources & Environmental Systems</p>
-                    <br>
-                <h3>Education</h3>
-                <div class="tab">
-                    <h4>Codecademy</h4>
-                    <p>Full-Stack Engineer Course, 2023</p>
-                    <h4>Portland State University</h4>
-                    <p>Bachelor of Science in Civil Engineering, 2012</p>
-                    <p>President of Chi Epsilon Civil Engineering Honor Society</p> 
-                    <br> 
-                </div>
-            </div>
-
-            <img id="selfie" src="./resources/selfie.jpg">
-
-           
-        </div>
-
-        <div class="top-space" id="experience"></div>
-
-        <h2 class="title">Experience</h2>
-        <div class="skills container">
-        <h2>Languages:</h2>
-            <h3>JavaScript</h3>
-            <h3>SQL</h3>
-            <h3>HTML</h3>
-            <h3>CSS</h3>
-        </div>
-        <div class="container skills">
-            <h2>Programs, Libraries, Frameworks, etc.</h2>
-                <h3>Node.js</h3>
-                <h3>PostgreSQL</h3>
-                <h3>React & Redux</h3>
-                <h3>Express.js</h3>
-                <h3>Git & GitHub</h3>
-            </div>
-
-        <div class="container">
-            <div class="activity">
-                <div class="posthover" id="apcd-hover">
-                    <h4>CO Department of Public Health & Environment <br> Air Permitting Website Overhaul</h4>
-                    <p>Restructured and redesigned 30+ pages to increase permitting efficiency for oil and gas industry emissions. Created new permitting guidance and improved the document update process. Received Certificate of Appreciation for Director of Environmental Programs.</p>
-                    <p>Example pages:</p>
-                    <a href="https://cdphe.colorado.gov/oil-gas-apens" target="_blank">Easy-to-find forms</a>
-                    <a href="https://cdphe.colorado.gov/apens-and-air-permits/do-you-need-an-apen-or-air-permit" target="_blank">Created clearer guidance for industry</a>
-                    <p>Used: WYSIWYG HTML editor</p>
-                </div>
-                <div class="prehover" id="apcd">
-                    <img src="./resources/APCD-logo.png">
-                </div>
-            </div>
-
-            <div class="activity">
-                <div class="posthover" id="suni-hover">
-                    <h4>Sunnyside Neighborhood Organization <br> Website Redesign</h4>
-                    <p>Implementing new website design for neighborhood organization. Projected launch: May 2023</p>
-                    <a href="https://sunnysidedenver.org/" target="_blank">Current site in need of a new design</a>
-                    <p>Using: Custom HTML/CSS/JavaScript, Figma, Membership Toolkit hosting platform</p>
-                </div>
-
-                <div class="prehover" id="suni">
-                    <img src="./resources/SUNI.png">
-                </div>
-            </div>
-            <div class="activity">
-                <div class="posthover" id="gestem-hover">
-                    <h4>GESTEM Planning Committee <br> Guide Coordinator</h4>
-                    <h5>2017 - present</h5>
-                    <p>Recruiting, training, and organizing approximately 120 volunteers for annual event for 1,000+ middle-schoolers</p>
-                    <a href="https://www.swe-rms.org/gestem.html" target="_blank">GESTEM website</a>
-                    <a href="https://www.swe-rms.org/blog/gstem-a-fun-filled-day-exploring-stem-with-middle-school-girls" target="_blank">My blog post about GESTEM</a>
-                </div>
-
-                <div class="prehover" id="gestem">
-                    <img src="./resources/GESTEM LOGO with Rocky Mountain SWE.jpg">
-                </div>
-            </div>
-        </div>
-
-        <a href="https://github.com/beegillard" target="_blank"><h2>See my other projects on GitHub</h2></a>
-
-        <div class="top-space" id="contact"></div>
-
-        <h2 class="title">Contact</h2>
-
-            <p>Email: beegillard@gmail.com</p>
-            <p>Phone: 520-241-3603</p>
-            <a href="https://www.linkedin.com/in/betsy-gillard-pe-b9607750/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/beegillard" target="_blank">GitHub</a>
-        
-        
-        </div> 
-    </body>
-
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="./main.js"></script>
+    </body>
+    
 
 </html>
