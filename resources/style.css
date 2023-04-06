@@ -226,6 +226,13 @@ button a {
    opacity: 0.05;
 }
 
+/* Contact */
+
+#contact {
+    flex-direction: column;
+}
+
+
 
 
 
