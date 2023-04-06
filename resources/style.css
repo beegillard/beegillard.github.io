@@ -35,14 +35,17 @@ div.container {
     height: 120px;
     width: 100%;
 }
-.tab {
-    margin-left: 20px;
-}
+.tab { margin-left: 20px; }
 .title {
     display: block;
-    margin: 60px;
+    margin: 0px 0px 60px 60px;
     width: 100%;
-    flex-basis: 100%;
+}
+p {
+    padding: 5px 0px;
+}
+h1.title {
+    margin-top: 30px;
 }
 
 /* Top  nav settings */
@@ -66,7 +69,7 @@ div.container {
 .top-nav.not-homepage {
     margin: 40px;
     position: absolute;
-    top: 10px;
+    top: 30px;
 }
 .top-nav li { 
     display: inline-block;
@@ -82,7 +85,7 @@ a.top-name {
 .top-name {
    position: absolute;
    text-align: center;
-    padding: 10px;
+    padding: 10px 10px 30px;
     width: 100%;
 }
 
@@ -95,9 +98,9 @@ li {
     text-align: center;
 }
 .active {
-    border-style: solid;
+    border: solid #6d5adc;
     border-width: 0px 0px 5px 5px;
-    border-image: linear-gradient(45deg, #6d5adc, white) 10;
+   /* border-image: linear-gradient(45deg, #6d5adc, white) 10; */
 }
 a:hover, button:hover { cursor: pointer; }
 .name2 { margin-top: 5px; }
@@ -149,7 +152,7 @@ button a {
 }
 
 /* About me */
- #selfie {
+ .picture {
     width: 30%;
     min-width: 300px;
     align-self: center;
@@ -158,11 +161,8 @@ button a {
 .half-width {
     width: 50%;
     padding-top: 24.5px;
-}
-#about-text {
     min-width: 300px;
 }
-
 
 /* Experience */
 
@@ -173,37 +173,44 @@ button a {
 
 .activity {
     width: 33%;
-    border: solid 10px #6d5adc;
-    border-image: linear-gradient(90deg, #6d5adc, white) 10;
+    border: solid 5px #6d5adc;
     padding: 20px;
     height: 400px;
     text-align: center;
-    background-color: #ffffff;
     position: relative;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
 .prehover img {
     width: 100%;
-    object-fit: contain;
-    opacity: 0.7;
-   
+    object-fit: cover;
+    max-height: 200px;
+    opacity: 0.5; 
+}
+
+.act-title  {
+    border: solid 3px #6d5adc;
+    border-radius: 10px;
+    padding: 5px;
+    height: 100px;
+    display: flex;
+    align-items: center;
 }
 .prehover {
     transition-duration: 0.5s;
 }
 
-.posthover a {
+.posthover a, #contact a {
     text-decoration: none;
     padding: 5px;
-    border: solid black;
-    border-radius: 10px;
-    font-weight: bold;
     display: inline;
+    color: #6d5adc;
 }
  .posthover {
     width: 100%;
+    height: 400px;
     padding: 20px;
     object-fit: contain;
     height: 100%;
@@ -227,10 +234,11 @@ button a {
 }
 
 /* Contact */
-
-#contact {
-    flex-direction: column;
+#colorado {
+    width: 50%;
 }
+
+#contact { font-size: 24px;}
 
 
 
