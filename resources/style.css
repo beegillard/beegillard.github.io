@@ -8,6 +8,13 @@
 html {
     font-size: 20px;
 }
+a {
+    text-decoration: none;
+    color:#6d5adc;
+}
+a:hover {
+    cursor: pointer;
+}
 
 body {
     font-family: 'Slabo 27px', serif;
@@ -16,9 +23,7 @@ body {
     color: #524d54;
     font-size: 1rem;
 }
-h1,h2,h3,h4,h5,h6,a{
-    margin:0;
-  }
+h1,h2,h3,h4,h5,h6,a { margin:0; }
 
 #content-wrapper {
     max-width: 1300px;
@@ -49,6 +54,11 @@ p {
 }
 h1.title {
     margin-top: 30px;
+}
+.half-width {
+    width: 50%;
+    padding-top: 24.5px;
+    min-width: 300px;
 }
 
 /* Top  nav settings */
@@ -90,7 +100,6 @@ h1.title {
 }
 
 a.top-name {
-    text-decoration: none;
     color: #524d54;
     font-size: 2rem;
 }
@@ -101,10 +110,6 @@ a.top-name {
     width: 100%;
 }
 
-li a {
-    text-decoration: none;
-}
-
 li {
     list-style-type: none;
     text-align: center;
@@ -113,7 +118,6 @@ li {
     border: solid #6d5adc;
     border-width: 0px 0px 5px 5px;
 }
-a:hover, button:hover { cursor: pointer; }
 .name2 { margin-top: 5px; }
 
 
@@ -141,10 +145,6 @@ button {
     padding: 0px 10px;
     margin: 0px 30px;
 }
-button a {
-    text-decoration: none;
-    color: #6d5adc;
-}
 
 #sentence {
     width: 75%;
@@ -165,11 +165,7 @@ button a {
     align-self: center;
 }
 
-.half-width {
-    width: 50%;
-    padding-top: 24.5px;
-    min-width: 300px;
-}
+
 
 /* Experience */
 
@@ -210,10 +206,8 @@ button a {
 }
 
 .posthover a, #contact a {
-    text-decoration: none;
     padding: 5px;
     display: inline;
-    color: #6d5adc;
 }
  .posthover {
     width: 100%;
@@ -248,16 +242,18 @@ button a {
 #contact { font-size: 24px;}
 
 /* Media queries */
+
 @media only screen and (max-width: 538px) {
-    html {
-        font-size: 16px;
-    }
-    .top-space {
-        height: 30px;
-    }
+    /* To-do: turn this into toggle menu
+put more space above advice sentence
+less space between title and text
+ */
 
     .top-nav li { 
         padding: 0px 18px;
+    }
+    .top-space.homepage {
+        height: 30px;
     }
 
     #advice {
@@ -270,15 +266,34 @@ button a {
         margin: 10px;
     }
     
-    #sentence {
-        height: 40px;
-        font-size: 0.8rem;
-        margin-top: 30px;
-    }
+    #sentence { margin-top: 30px;}
+ 
 
 }
 
-/* To-do: turn this into toggle menu */
+@media only screen and (max-width: 725px) {
+    html {
+        font-size: 16px;
+    }
+    .title {
+        margin: 0px 0px 20px 20px;
+    }
+    div.container {
+        padding: 0px 20px 20px;
+    }
+    .half-width {
+        width: 100%;
+    }
+
+    #activities {
+        display: flex;
+        flex-direction: column;
+    }
+    .activity {
+        width: 80%;
+    }
+}
+
 
 
 
