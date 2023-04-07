@@ -5,13 +5,16 @@
     -moz-box-sizing: border-box; 
     box-sizing: border-box; 
     }
+html {
+    font-size: 20px;
+}
 
 body {
     font-family: 'Slabo 27px', serif;
     margin-left: auto;
     margin-right: auto;
     color: #524d54;
-    font-size: 20px;
+    font-size: 1rem;
 }
 h1,h2,h3,h4,h5,h6,a{
     margin:0;
@@ -61,26 +64,35 @@ h1.title {
     color: #f4f4f3;
 }
 
+.top-nav { position: absolute; }
+
+.top-nav li { 
+    display: inline-block;
+    padding: 0px 30px;
+    font-size: 1.2rem;
+    font-family: 'Slabo 27px', serif;
+}
+
 .top-nav.homepage {
     margin: 10px;
     position: absolute;
     top: 10px;
+}
+.top-nav.homepage a { color:#f4f4f3; }
+
+.top-nav.not-homepage a {
+    color: #524d54; margin-top: 50px;
 }
 .top-nav.not-homepage {
     margin: 40px;
     position: absolute;
     top: 30px;
 }
-.top-nav li { 
-    display: inline-block;
-    padding: 0px 30px;
-    font-size: 24px;
-    font-family: 'Slabo 27px', serif;
-}
+
 a.top-name {
     text-decoration: none;
     color: #524d54;
-    font-size: 40px;
+    font-size: 2rem;
 }
 .top-name {
    position: absolute;
@@ -100,15 +112,10 @@ li {
 .active {
     border: solid #6d5adc;
     border-width: 0px 0px 5px 5px;
-   /* border-image: linear-gradient(45deg, #6d5adc, white) 10; */
 }
 a:hover, button:hover { cursor: pointer; }
 .name2 { margin-top: 5px; }
-.top-nav.homepage a { color:#f4f4f3;}
-.top-nav.not-homepage a {
-    color: #524d54; margin-top: 50px;
 
-}
 
 
 /* Interactivity */
@@ -239,6 +246,46 @@ button a {
 }
 
 #contact { font-size: 24px;}
+
+/* Media queries */
+@media only screen and (max-width: 538px) {
+    html {
+        font-size: 16px;
+    }
+    .top-space {
+        height: 30px;
+    }
+
+    .top-nav li { 
+        padding: 0px 18px;
+    }
+
+    #advice {
+        flex-direction: column;
+    }
+    button {
+        min-height: 56px;
+        font-size: 0.8rem;
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    #sentence {
+        height: 40px;
+        font-size: 0.8rem;
+        margin-top: 30px;
+    }
+
+}
+
+/* To-do: turn this into toggle menu */
+
+
+
+
+
+
+
 
 
 

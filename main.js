@@ -1,31 +1,32 @@
 const first = [
     'Today is your day to',
-'Today it is definitely a bad idea to',
 'The time is now to',
 'When in doubt,',
 'The magic 8 ball says:',
 ];
 
 const second = [
-    'go cause some trouble',
-'take some time for introspection',
-'give BirdDog some treats',
-'eat a lot of cookies',
-'drink a glass of water'
+    ' go stir up some trouble',
+' stop looking at Instagram ',
+' give BirdDog some treats',
+' eat a lot of cookies',
+' drink a glass of water',
+' write your memoir'
 ];
 
 const third = [
-    ",but don't forget",
+    ", but don't forget",
     ", oh and also",
-    ", but you're a terrible person if you didn't know",
-    ", and have you considered the fact that",
+    ", and consider that",
 ];
 
 const fourth = [
-' the difference between "they\'re" "there" and "their".',
-' capitalism is a death cult.',
-' to eat breakfast first.',
-' I just took a DNA test turns out I\'m 100% that bitch.',
+' there is an important difference between "they\'re" "there" and "their".',
+' if your windows are too clean birds might hit them.',
+' you should always eat breakfast first.',
+' there really is such a thing as too many houseplants.',
+' cats and dogs really CAN be friends.',
+' mansplaining is never the solution.'
 ];
 
 
@@ -36,7 +37,7 @@ const generateSentence = () => {
     let three = third[Math.floor(Math.random() * third.length)];
     let four = fourth[Math.floor(Math.random() * fourth.length)];
 
-    return `${one} ${two} ${three} ${four}`;
+    return `${one}${two}${three}${four}`;
 }
 
 let button = document.getElementById('advice-button');
