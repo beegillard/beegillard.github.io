@@ -22,7 +22,7 @@ const third = [
 
 const fourth = [
 ' there is an important difference between "they\'re" "there" and "their".',
-' if your windows are too clean birds might hit them.',
+' if your windows are too clean birds might fly into them.',
 ' you should always eat breakfast first.',
 ' there really is such a thing as too many houseplants.',
 ' cats and dogs really CAN be friends.',

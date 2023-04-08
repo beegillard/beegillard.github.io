@@ -169,21 +169,29 @@ button {
 
 /* Experience */
 
-.skills.container {
-    display: inline-flex;
-    flex-direction: column;
+.skills {
+    width: 30%;
+    text-align: center;
+    min-width: 250px;
+    margin: 10px 5px 20px;
+}
+
+#activities, #lists {
+    justify-content: center;
 }
 
 .activity {
-    width: 33%;
+    width: 30%;
+    min-width: 325px;
     border: solid 5px #6d5adc;
     padding: 20px;
+    margin: 10px;
     height: 400px;
     text-align: center;
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .prehover img {
@@ -194,10 +202,14 @@ button {
 }
 
 .act-title  {
+    position: absolute;
+    top: 10px;
+    left: 10%;
     border: solid 3px #6d5adc;
     border-radius: 10px;
     padding: 5px;
     height: 100px;
+    width: 80%;
     display: flex;
     align-items: center;
 }
@@ -205,7 +217,7 @@ button {
     transition-duration: 0.5s;
 }
 
-.posthover a, #contact a {
+.posthover a {
     padding: 5px;
     display: inline;
 }
@@ -239,18 +251,39 @@ button {
     width: 50%;
 }
 
-#contact { font-size: 24px;}
+#contact { margin-top: 20px; 
+    font-size: 24px;}
 
 /* Media queries */
 
-@media only screen and (max-width: 538px) {
-    /* To-do: turn this into toggle menu
-put more space above advice sentence
-less space between title and text
- */
+@media only screen and (max-width: 725px) {
 
+    .title {
+        margin: 0px 0px 20px 20px;
+    }
+    div.container {
+        padding: 0px 20px 20px;
+    }
+    .half-width {
+        width: 100%;
+    }
+
+    #activities {
+        display: flex;
+        flex-direction: column;
+    }
+    .activity {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 538px) {
     .top-nav li { 
-        padding: 0px 18px;
+        padding: 0px 10px;
+    }
+    .top-nav.not-homepage {
+        margin: 20px 5px;
+        top: 45px;
     }
     .top-space.homepage {
         height: 30px;
@@ -269,29 +302,6 @@ less space between title and text
     #sentence { margin-top: 30px;}
  
 
-}
-
-@media only screen and (max-width: 725px) {
-    html {
-        font-size: 16px;
-    }
-    .title {
-        margin: 0px 0px 20px 20px;
-    }
-    div.container {
-        padding: 0px 20px 20px;
-    }
-    .half-width {
-        width: 100%;
-    }
-
-    #activities {
-        display: flex;
-        flex-direction: column;
-    }
-    .activity {
-        width: 80%;
-    }
 }
 
 
