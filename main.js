@@ -1,32 +1,46 @@
 const first = [
-    'Today is your day to',
+'Today is your day to',
 'The time is now to',
 'When in doubt,',
-'The magic 8 ball says:',
+'The magic 8 ball says: ',
+'The focus of your day is to',
+'You already know what you need to know: ',
+'Your stars have aligned and they are saying: ',
 ];
 
 const second = [
-    ' go stir up some trouble',
-' stop looking at Instagram ',
-' give BirdDog some treats',
-' eat a lot of cookies',
+' go stir up some good ol\'trouble',
+' stop looking at Instagram',
+' give Birdie dog some treats',
+' eat a big healthy salad',
 ' drink a glass of water',
-' write your memoir'
+' write the first chapter of your memoir',
+' truly learn how to set your own boundaries',
+' buy a plane ticket to somewhere new',
+' re-read one of your favorite books',
+' be the kindest, most patient driver on the road'
 ];
 
 const third = [
     ", but don't forget",
     ", oh and also",
     ", and consider that",
+    ", and some food for thought for you:"
 ];
 
 const fourth = [
-' there is an important difference between "they\'re" "there" and "their".',
-' if your windows are too clean birds might fly into them.',
-' you should always eat breakfast first.',
+' the difference between "they\'re" "there" and "their" is very important.',
+' if your house\'s windows are too clean, birds might fly into them.',
+' you should always eat breakfast before making big decisions.',
 ' there really is such a thing as too many houseplants.',
 ' cats and dogs really CAN be friends.',
-' mansplaining is never the solution.'
+' mansplaining is never the solution. Never.',
+' that song about wearing your sunscreen is still totally relevant.',
+' ...remember when Party City sent out their corporate approach to fighting COVID-19?',
+" the Undo Send option in Gmail can be as long as 30 seconds and it's not a bad idea.",
+" financially supporting journalism benefits everyone.",
+" the plural of 'octopus' is 'octopuses' and not 'octopi'. They are also seriously smart."
+
 ];
 
 
