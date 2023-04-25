@@ -9,7 +9,7 @@ const first = [
 ];
 
 const second = [
-' go stir up some good ol\'trouble',
+' go stir up some good ol\' trouble',
 ' stop looking at Instagram',
 ' give Birdie dog some treats',
 ' eat a big healthy salad',
